@@ -14,6 +14,12 @@
 
 ---
 
+<p align="center">
+  <img src="demo/demo.svg" alt="DAEMON demo" width="800"/>
+</p>
+
+---
+
 Terminal-native AI dev agent powered by Gemini 2.5 Flash.  
 Describe what to build. DAEMON plans, executes shell commands, writes files,  
 validates output, and commits — autonomously. No GUI. No hand-holding.
@@ -146,8 +152,10 @@ config      dotenv
 ```
 daemon/
 ├── index.js          agent core + CLI interface
-├── index-cli.js      legacy entry (proxies to index.js)
-├── run-cli.sh        shell wrapper
+├── demo/
+│   ├── demo.svg      animated terminal demo (README)
+│   ├── demo.cast     raw asciinema recording
+│   └── replay.js     demo replay script
 ├── .env              API key — never commit this
 ├── package.json
 └── README.md
